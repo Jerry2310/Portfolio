@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: Inter;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.linearGradient{
+  background: linear-gradient(97deg, #a855f7 4%, #6b21a8 100%);
+}
+/* #4066ff */
+/* #2949c6 */
+
+.Bold-28{
+  @apply text-[28px] font-[400] leading-[120%];
+}
+.max-container{
+  @apply mx-auto max-w-[1440px];
+}
+
+.padding-container{
+  @apply px-6 lg:px-20 3xl:px-0;
+}
+
+.bold-18{
+  @apply text-[18px] font-[700];
+}
+
+.flexCenter{
+  @apply flex items-center justify-center; 
+}
+
+.regular-16{
+  @apply text-[16px] font-[400];
+}
+
+.bold-20{
+  @apply text-[20px] font-[600];
+}
+
+.bold-22{
+  @apply text-[22px] font-[600];
+}
